@@ -1,0 +1,89 @@
+\hypertarget{mainwindow_8h_source}{}\doxysection{mainwindow.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#ifndef\ MAINWINDOW\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#define\ MAINWINDOW\_H}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QMainWindow>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QSerialPort>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <QObject>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}konfiguracja.h"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}ui\_mainwindow.h"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}wyswietlanie.h"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}qcgaugewidget.h"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}qcustomplot.h"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <QtCharts>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <QtCharts/QChartView>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <QtCharts/QBarSet>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <QtCharts/QBarSeries>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <QtCharts/QValueAxis>}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <QtCharts/QCategoryAxis>}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ QT\_BEGIN\_NAMESPACE}
+\DoxyCodeLine{00023\ \textcolor{keyword}{namespace\ }Ui\ \{\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_main_window}{MainWindow}};\ \}}
+\DoxyCodeLine{00024\ QT\_END\_NAMESPACE}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00031\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_main_window}{MainWindow}}\ :\ \textcolor{keyword}{public}\ QMainWindow}
+\DoxyCodeLine{00032\ \{}
+\DoxyCodeLine{00033\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00040\ \ \ \ \ \mbox{\hyperlink{class_main_window}{MainWindow}}(QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00045\ \ \ \ \ \mbox{\hyperlink{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}{\string~MainWindow}}();}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \textcolor{keyword}{public}\ slots:}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_a9b69dc198610efc51767ec0019db61e5}{on\_actionInformacje\_o\_programie\_triggered}}();}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_aaa4bedccaee80ee8d9130a891a7aac85}{on\_actionKonfiguracja\_polaczenia\_triggered}}();}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_a7bebfe01c99ee0986b0753e6d959b07e}{handlePortConnected}}(QString\ portName);}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_a7f9d2e7dd2bd0143b47f6c4207e9d003}{on\_actionPolacz\_ze\_skonfigurowanym\_portem\_triggered}}();}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_a42f11195758f78967e670779c4535708}{readFromPort}}();}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_a4de79c63c7fa0b8d7c468ac71f20be81}{on\_pushButton\_clicked}}();}
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_ae28365dbfbc2b7bf417f6fec409a4cea}{on\_lineEdit\_editingFinished}}();}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_a0974784591c5e85ae291bae3f12a37d5}{on\_actionRoz\_cz\_triggered}}();}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_a3d8ea65d9ca00c5d020445fdd924daa3}{on\_actionZapisz\_dane\_do\_pliku\_CSV\_triggered}}();}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00096\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_a87e8b4dd6c0c4cbda63e733acf5ba1c9}{on\_actionInstrukcja\_u\_ytkowania\_triggered}}();}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00101\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_aed54baf448e3e218ac72f4123a0c3eb5}{on\_actionWyswietlanie\_triggered}}();}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00105\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00106\ \ \ \ \ \textcolor{keywordtype}{int}\ flag1=1;}
+\DoxyCodeLine{00107\ \ \ \ \ \textcolor{keywordtype}{int}\ flag2=1;}
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00110\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00111\ \ \ \ \ Ui::MainWindow\ *ui;}
+\DoxyCodeLine{00112\ \ \ \ \ \mbox{\hyperlink{class_pomoc}{Pomoc}}\ *oknoPomocy;}
+\DoxyCodeLine{00113\ \ \ \ \ \mbox{\hyperlink{classwyswietlanie}{wyswietlanie}}\ *oknoWyswietlania;}
+\DoxyCodeLine{00114\ \ \ \ \ QSerialPort\ *device;}
+\DoxyCodeLine{00115\ \ \ \ \ \textcolor{keywordtype}{void}\ readData(QString\ receivedString);}
+\DoxyCodeLine{00116\ \ \ \ \ QCPBars\ *gauge;}
+\DoxyCodeLine{00117\ \ \ \ \ QcGaugeWidget\ *\ mSpeedGauge;}
+\DoxyCodeLine{00118\ \ \ \ \ QcNeedleItem\ *mSpeedNeedle;}
+\DoxyCodeLine{00119\ \ \ \ \ QBarSet\ *set1;}
+\DoxyCodeLine{00120\ \ \ \ \ QBarSeries\ *series;}
+\DoxyCodeLine{00121\ \ \ \ \ QChart\ *chart;}
+\DoxyCodeLine{00122\ \ \ \ \ QChartView\ *chartView;}
+\DoxyCodeLine{00123\ }
+\DoxyCodeLine{00124\ \ \ \ \ QCPAxis\ *axis2;}
+\DoxyCodeLine{00125\ }
+\DoxyCodeLine{00126\ }
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00128\ \};}
+\DoxyCodeLine{00129\ }
+\DoxyCodeLine{00130\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MAINWINDOW\_H}}
+
+\end{DoxyCode}

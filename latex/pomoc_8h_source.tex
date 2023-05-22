@@ -1,0 +1,51 @@
+\hypertarget{pomoc_8h_source}{}\doxysection{pomoc.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ POMOC\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ POMOC\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QDialog>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QSerialPort>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{namespace\ }Ui\ \{}
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_pomoc}{Pomoc}};}
+\DoxyCodeLine{00009\ \}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_pomoc}{Pomoc}}\ :\ \textcolor{keyword}{public}\ QDialog}
+\DoxyCodeLine{00017\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_pomoc}{Pomoc}}(QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00035\ \ \ \ \ uint8\_t\ \mbox{\hyperlink{class_pomoc_a4d0a75c72b560b7f79cffb0fdb4bee02}{calculateCRC8}}(\textcolor{keywordtype}{float}\ value1,\ \textcolor{keywordtype}{float}\ value2,\ \textcolor{keywordtype}{int}\ value3,\ \textcolor{keywordtype}{int}\ value4);}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00040\ \ \ \ \ \mbox{\hyperlink{class_pomoc_aa8e7ea67907f6f0babdf6c70b2ba5b73}{\string~Pomoc}}();}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_ROZLACZ\_clicked();}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_POLACZ\_clicked();}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_SZUKAJ\_clicked();}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_pushButton\_clicked();}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{void}\ readFromPort();}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keywordtype}{void}\ sendMessageToDevice(QString\ message);}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00075\ \ \ \ \ Ui::Pomoc\ *ui2;}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordtype}{void}\ addToLogs(QString\ message);}
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{void}\ readData(QString\ receivedString);}
+\DoxyCodeLine{00078\ \ \ \ \ \mbox{\hyperlink{class_pomoc}{Pomoc}}\ *oknoPomocy;}
+\DoxyCodeLine{00079\ \ \ \ \ QSerialPort\ *device;}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ signals:}
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pomoc_a0defb6866c071371a2dc97e38d4c2f94}{portConnected}}(QString\ portName);}
+\DoxyCodeLine{00087\ \};}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00089\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ POMOC\_H}}
+
+\end{DoxyCode}

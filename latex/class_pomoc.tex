@@ -1,0 +1,121 @@
+\hypertarget{class_pomoc}{}\doxysection{Pomoc Class Reference}
+\label{class_pomoc}\index{Pomoc@{Pomoc}}
+
+
+Klasa \mbox{\hyperlink{class_pomoc}{Pomoc}} reprezentuje okno pomocnicze.  
+
+
+
+
+{\ttfamily \#include $<$konfiguracja.\+h$>$}
+
+Inheritance diagram for Pomoc\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pomoc}
+\end{center}
+\end{figure}
+\doxysubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_pomoc_a0defb6866c071371a2dc97e38d4c2f94}{port\+Connected}} (QString port\+Name)
+\begin{DoxyCompactList}\small\item\em Sygnał emitowany po nawiązaniu połączenia z portem. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pomoc_aee39c49d40c89598ef7e70678bcc4343}{Pomoc}} (QWidget $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Konstruktor klasy \mbox{\hyperlink{class_pomoc}{Pomoc}}. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{class_pomoc_a4d0a75c72b560b7f79cffb0fdb4bee02}{calculate\+CRC8}} (float value1, float value2, int value3, int value4)
+\begin{DoxyCompactList}\small\item\em Funkcja oblicza sumę kontrolną CRC8 na podstawie podanych wartości. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pomoc_aa8e7ea67907f6f0babdf6c70b2ba5b73}\label{class_pomoc_aa8e7ea67907f6f0babdf6c70b2ba5b73}} 
+{\bfseries $\sim$\+Pomoc} ()
+\begin{DoxyCompactList}\small\item\em Destruktor klasy \mbox{\hyperlink{class_pomoc}{Pomoc}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa \mbox{\hyperlink{class_pomoc}{Pomoc}} reprezentuje okno pomocnicze. 
+
+Pozwala na interakcję z użytkownikiem w celu konfiguracji połączenia i wysyłania danych do urządzenia. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_pomoc_aee39c49d40c89598ef7e70678bcc4343}\label{class_pomoc_aee39c49d40c89598ef7e70678bcc4343}} 
+\index{Pomoc@{Pomoc}!Pomoc@{Pomoc}}
+\index{Pomoc@{Pomoc}!Pomoc@{Pomoc}}
+\doxysubsubsection{\texorpdfstring{Pomoc()}{Pomoc()}}
+{\footnotesize\ttfamily Pomoc\+::\+Pomoc (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Konstruktor klasy \mbox{\hyperlink{class_pomoc}{Pomoc}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & Wskaźnik na obiekt rodzica (domyślnie\+: nullptr)\\
+\hline
+{\em parent} & Wskaźnik do rodzica okna. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pomoc_a4d0a75c72b560b7f79cffb0fdb4bee02}\label{class_pomoc_a4d0a75c72b560b7f79cffb0fdb4bee02}} 
+\index{Pomoc@{Pomoc}!calculateCRC8@{calculateCRC8}}
+\index{calculateCRC8@{calculateCRC8}!Pomoc@{Pomoc}}
+\doxysubsubsection{\texorpdfstring{calculateCRC8()}{calculateCRC8()}}
+{\footnotesize\ttfamily uint8\+\_\+t Pomoc\+::calculate\+CRC8 (\begin{DoxyParamCaption}\item[{float}]{value1,  }\item[{float}]{value2,  }\item[{int}]{value3,  }\item[{int}]{value4 }\end{DoxyParamCaption})}
+
+
+
+Funkcja oblicza sumę kontrolną CRC8 na podstawie podanych wartości. 
+
+Oblicza sumę kontrolną CRC-\/8 dla wartości przekazanych jako argumenty.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value1} & Wartość 1 \\
+\hline
+{\em value2} & Wartość 2 \\
+\hline
+{\em value3} & Wartość 3 \\
+\hline
+{\em value4} & Wartość 4 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Suma kontrolna CRC8
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em value1} & Pierwsza wartość do obliczenia sumy kontrolnej. \\
+\hline
+{\em value2} & Druga wartość do obliczenia sumy kontrolnej. \\
+\hline
+{\em value3} & Trzecia wartość do obliczenia sumy kontrolnej. \\
+\hline
+{\em value4} & Czwarta wartość do obliczenia sumy kontrolnej. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Suma kontrolna CRC-\/8 obliczona dla wartości. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pomoc_a0defb6866c071371a2dc97e38d4c2f94}\label{class_pomoc_a0defb6866c071371a2dc97e38d4c2f94}} 
+\index{Pomoc@{Pomoc}!portConnected@{portConnected}}
+\index{portConnected@{portConnected}!Pomoc@{Pomoc}}
+\doxysubsubsection{\texorpdfstring{portConnected}{portConnected}}
+{\footnotesize\ttfamily void Pomoc\+::port\+Connected (\begin{DoxyParamCaption}\item[{QString}]{port\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Sygnał emitowany po nawiązaniu połączenia z portem. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em port\+Name} & Nazwa połączonego portu \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+konfiguracja.\+h\item 
+konfiguracja.\+cpp\end{DoxyCompactItemize}

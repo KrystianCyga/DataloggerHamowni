@@ -1,0 +1,62 @@
+\hypertarget{wyswietlanie_8h_source}{}\doxysection{wyswietlanie.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ WYSWIETLANIE\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ WYSWIETLANIE\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QDialog>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{namespace\ }Ui\ \{}
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classwyswietlanie}{wyswietlanie}};}
+\DoxyCodeLine{00008\ \}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classwyswietlanie}{wyswietlanie}}\ :\ \textcolor{keyword}{public}\ QDialog}
+\DoxyCodeLine{00014\ \{}
+\DoxyCodeLine{00015\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classwyswietlanie}{wyswietlanie}}(QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{classwyswietlanie_aa86073df732aee367a7f6333bc4e9c81}{\string~wyswietlanie}}();}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{bool}\ Ctem1\ =\textcolor{keyword}{true};\ \textcolor{comment}{//\ Zmienna\ oznaczająca,\ czy\ tem1\ jest\ zaznaczone}}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{bool}\ Ctem2=\textcolor{keyword}{true};\ \textcolor{comment}{//\ Zmienna\ oznaczająca,\ czy\ tem2\ jest\ zaznaczone}}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{bool}\ Ctacho=\textcolor{keyword}{true};\ \textcolor{comment}{//\ Zmienna\ oznaczająca,\ czy\ tacho\ jest\ zaznaczone}}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{bool}\ Cbelka=\textcolor{keyword}{true};\ \textcolor{comment}{//\ Zmienna\ oznaczająca,\ czy\ belka\ jest\ zaznaczona}}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{int}\ zakresX=50;\ \textcolor{comment}{//\ Zakres\ osi\ X\ na\ wykresie}}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{int}\ zakresY=50;\ \textcolor{comment}{//\ Zakres\ osi\ Y\ na\ wykresie}}
+\DoxyCodeLine{00035\ \ \ \ \ Qt::GlobalColor\ kolor1;\ \textcolor{comment}{//\ Kolor\ dla\ danych\ tem1}}
+\DoxyCodeLine{00036\ \ \ \ \ Qt::GlobalColor\ kolor2;\ \textcolor{comment}{//\ Kolor\ dla\ danych\ tem2}}
+\DoxyCodeLine{00037\ \ \ \ \ Qt::PenStyle\ linia1;\ \textcolor{comment}{//\ Styl\ linii\ dla\ danych\ tem1}}
+\DoxyCodeLine{00038\ \ \ \ \ Qt::PenStyle\ linia2;\ \textcolor{comment}{//\ Styl\ linii\ dla\ danych\ tem2}}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classwyswietlanie_a594aadc10b1925650fee1103f28ecb3f}{ustaw\_wykres}}();}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_pushButton\_clicked();}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_checkBoxTemp2\_clicked();}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_checkBoxBelka\_clicked();}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_horizontalSlider\_osY\_valueChanged(\textcolor{keywordtype}{int}\ value);}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_checkBoxTacho\_stateChanged(\textcolor{keywordtype}{int}\ arg1);}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_checkBoxTemp1\_stateChanged(\textcolor{keywordtype}{int}\ arg1);}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_horizontalSlider\_osX\_valueChanged(\textcolor{keywordtype}{int}\ value);}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_horizontalSlider\_osX\_2\_valueChanged(\textcolor{keywordtype}{int}\ value);}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00089\ \ \ \ \ Ui::wyswietlanie\ *ui;}
+\DoxyCodeLine{00090\ \ \ \ \ \mbox{\hyperlink{classwyswietlanie}{wyswietlanie}}\ *oknoWyswietlania;}
+\DoxyCodeLine{00091\ \};}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00093\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ WYSWIETLANIE\_H}}
+
+\end{DoxyCode}
